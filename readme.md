@@ -1,5 +1,7 @@
 # Tablist
 
+[![webstore](https://github.com/mufasa159/tablist/assets/40151627/f151ef30-91e3-469d-b379-582ae0f9ca47)](https://chrome.google.com/webstore/detail/tablist/apapdopkbmfjgeldggjjeboinpkjmhec)
+
 Browser extension for lisitng and copying URLs of all opened tabs in all windows. works with Chrome-based browsers only.
 
 # Demo
