@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,57 @@
    <link rel="stylesheet" href="style.css">
    <script defer src="./index.js"></script>
 </head>
+
 <body>
-   <div id="buttons">
-      <button id="copyBtn">Copy to Clipboard</button>
+   <div id="btns">
+      <button id="cbtn">
+         <svg width="20px" height="18px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+               <g id="cicn" class="w" transform="translate(85.333333, 42.666667)">
+                  <path
+                     d="M341.333333,85.3333333 L341.333333,405.333333 L85.3333333,405.333333 L85.3333333,85.3333333 L341.333333,85.3333333 Z M298.666667,128 L128,128 L128,362.666667 L298.666667,362.666667 L298.666667,128 Z M234.666667,7.10542736e-15 L234.666667,42.6666667 L42.6666667,42.6666667 L42.6666667,298.666667 L1.42108547e-14,298.666667 L1.42108547e-14,7.10542736e-15 L234.666667,7.10542736e-15 Z">
+                  </path>
+               </g>
+            </g>
+         </svg>
+         <span id="ctxt">Copy to Clipboard</span>
+      </button>
+
+      <button id="obtn">
+         <svg height="13px" width="13px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+            <g>
+               <path class="w" d="M96,0v416h416V0H96z M472,376H136V112h336V376z" />
+               <polygon class="w" points="40,472 40,296 40,136 40,96 0,96 0,512 416,512 416,472 376,472" />
+            </g>
+         </svg>
+         <span id="otxt">Open Links</span>
+      </button>
+
+      <button id="fopn" class="hide">
+         <svg class="w" width="12px" height="12px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 3.5L8.5 9 7 7.5 12.5 2H10V0h6v6h-2V3.5zM6 0v2H2v12h12v-4h2v6H0V0h6z" fill-rule="evenodd" />
+         </svg>
+         Open
+      </button>
+
+      <button id="fcnl" class="hide">
+         <svg fill='#fff' width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <rect transform="rotate(45)" ry="0" y="-1" x="4.3137083" height="2" width="14" />
+            <rect transform="rotate(-45)" ry="0" y="10.313708" x="-7" height="2" width="14" />
+         </svg>
+         Cancel
+      </button>
    </div>
-   <div id="tablist"></div>
+
+   <div id="tlst"></div>
+
+   <div id="form" class="hide">
+      <form>
+         <textarea id="ftxt" placeholder="Paste your links here"></textarea>
+      </form>
+   </div>
 </body>
+
 </html>

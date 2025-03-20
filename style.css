@@ -8,10 +8,70 @@ body {
    color: #D8DDEE;
 }
 
+a {
+   text-decoration: none;
+   color: #D8DDEE;
+}
+
+a:hover {
+   color: #b895fd;
+}
+
+li {
+   padding: 8px 0px;
+   border-bottom: 1px solid #40476d;
+   word-wrap: break-word;
+}
+
+li:last-child {
+   border-bottom: none;
+}
+
+button {
+   color: #ffffff;
+   border: 1px solid #1e2133;
+   background: #915BFF;
+   border: none;
+}
+
+textarea {
+   color: #D8DDEE;
+   background: #1e2133;
+   border: 1px solid #40476d;
+   padding: 10px;
+   width: 100vw;
+   height: 300px;
+   resize: none;
+   outline: none;
+   font-size: 11px;
+   box-sizing: border-box;
+}
+
+textarea::placeholder {
+   color: #666e9f;
+}
+
+textarea::-webkit-scrollbar {
+   width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+   background: #1e2133;
+   border: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+   color: #915BFF;
+   border-radius: 4px;
+   background-color: #915BFF;
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+   cursor: default;
+}
+
 .success {
    color: black;
    background-color: #76f576;
-   border: 1px solid #76f576;
+   border: 1px solid #76f576 !important;
    font-weight: 500;
 }
 
@@ -22,44 +82,50 @@ body {
    font-weight: 500;
 }
 
-#buttons {
+#btns {
    display: inline-flex;
 }
 
-button {
-   display: inline-block;
+#cbtn,
+#obtn,
+#fcnl,
+#fopn {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: center;
+   gap: 6px;
    outline: 0;
    cursor: pointer;
    text-align: center;
-   border: none;
    padding: 8px 12px;
    min-height: 20px;
-   width: 100vw;
-   color: #ffffff;
-   border: 1px solid #1e2133;
-   background: #915BFF;
-   border: 1px solid #915BFF;
    font-weight: 500;
    font-size: 12px;
+   width: 50vw;
 }
 
-#tablist {
+#cbtn,
+#fopn {
+   border-right: 2px solid #6839c6;
+}
+
+#tlst {
    border: 1px solid #40476d;
    margin: 0px;
-   padding: 10px 20px 20px 20px;
+   padding: 10px 20px 15px 20px;
    list-style-type: none;
 }
 
-a {
-   text-decoration: none;
-   color: #D8DDEE;
-}
-a:hover {
-   color: #b895fd;
+.w {
+   fill: #fff;
 }
 
-li {
-   padding: 8px 0px;
-   border-bottom: 1px solid #40476d;
-   word-wrap: break-word;
+.b {
+   fill: #000;
+}
+
+.hide {
+   display: none !important;
 }
